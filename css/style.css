@@ -399,10 +399,10 @@ footer a{
 
     /*Seccion home*/
     #home h1{
-        top: 20%;
-        left: 10%;
-        font-size: 50px;
-        letter-spacing: 3px;
+        top: 10%;
+        left: 6%;
+        font-size: 40px;
+        letter-spacing: 2px;
     }
 
     #home article{
@@ -410,14 +410,18 @@ footer a{
     }
 
     #description{
-        top: 35%;
-        left: 10%;
-        font-size: 20px;
-        width: 50%;
+        top: 25%;
+        left: 6%;
+        font-size: 16px;
+        width: 55%;
     }
 
     #home article{
         flex-wrap: wrap;
+    }
+
+    #home article div p{
+        font-size: 15px;
     }
 
     .cont-details{
@@ -425,11 +429,19 @@ footer a{
     }
 
     .iconHome{
-        font-size: 25px;
+        font-size: 22px;
     }
 
+    .details span{
+        font-size: 14px;
+    }
+
+    .details{
+        padding: 15px 0;
+    }
+    
     .details i{
-        font-size: 18px;
+        font-size: 16px;
     }
     
     /*Seccion de tours*/
