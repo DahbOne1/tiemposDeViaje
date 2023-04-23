@@ -393,17 +393,17 @@ footer a{
 
     /*Seccion home*/
     #home h1{
-        top: 10%;
+        top: 8%;
         left: 6%;
-        font-size: 65px;
+        font-size: 60px;
         letter-spacing: 2px;
     }
     
     #description{
-        top: 28%;
+        top: 29%;
         left: 6%;
-        font-size: 28px;
-        width: 90%;
+        font-size: 25px;
+        width: 94%;
     }
 
     #home article{
@@ -444,19 +444,19 @@ footer a{
     /*seccion discover*/
     #discover h5{
         left: 7%;
-        top: 14%;
+        top: 6%;
         font-size: 45px;
     }
 
     #galery{
         left: 7%;
-        top: 28%;
+        top: 24%;
         flex-wrap: wrap;
         gap: 8px;
     }
 
     #galery div{
-        width: 80%;
+        width: 90%;
     }
 
     #galery div button{
@@ -473,8 +473,4 @@ footer a{
 
 }
 
-@media screen and (max-width: 321px){
-    #contact{
-        width: 90%;
-    }
-}
+
