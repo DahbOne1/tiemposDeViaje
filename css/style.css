@@ -395,15 +395,15 @@ footer a{
     #home h1{
         top: 10%;
         left: 6%;
-        font-size: 70px;
+        font-size: 65px;
         letter-spacing: 2px;
     }
     
     #description{
-        top: 30%;
+        top: 28%;
         left: 6%;
         font-size: 28px;
-        width: 70%;
+        width: 90%;
     }
 
     #home article{
@@ -444,13 +444,13 @@ footer a{
     /*seccion discover*/
     #discover h5{
         left: 7%;
-        top: 18%;
+        top: 14%;
         font-size: 45px;
     }
 
     #galery{
         left: 7%;
-        top: 36%;
+        top: 28%;
         flex-wrap: wrap;
         gap: 8px;
     }
