@@ -7,6 +7,11 @@ body{
     background-color: #171717;
     color: #ffffff;
     font-family: 'Oswald', sans-serif;
+    font-size: 10px;
+}
+
+img{
+    object-fit: cover;
 }
 
 ul{
@@ -19,7 +24,7 @@ ul{
 a{
     text-decoration: none;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 2.2em;
 }
 
 /*Estilos del header*/
@@ -76,17 +81,17 @@ section{
 
 #home h1{
     position: absolute;
-    top: 30%;
-    left: 15%;
-    font-size: 60px;
+    top: 20%;
+    left: 12%;
+    font-size: 8em;
     letter-spacing: 3px;
 }
 
 #description{
     position: absolute;
-    top: 45%;
-    left: 15%;
-    font-size: 20px;
+    top: 38%;
+    left: 12%;
+    font-size: 2.5em;
     width: 30%;
 }
 
@@ -168,8 +173,8 @@ section{
 }
 
 #tours article div{
-    width: 20%;
-    height: 520px;
+    width: 24%;
+    height: 75vh;
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -325,9 +330,30 @@ footer a{
     font-size: 20px;
 }
 
+/*Etilos para laptops mas pequeñas*/
+@media screen and (max-width: 1025px){
+    #home h1{
+        top: 24%;
+        font-size: 6em;
+    }
+    
+    #description{
+        font-size: 2em;
+        width: 50%;
+    }
+    
+}
 
 /*Estilos para tablets*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 769px){
+    #home h1{
+        font-size: 6em;
+    }
+    
+    #description{
+        width: 50%;
+        font-size: 2em;
+    }
     /*Estilos de la seccion tours*/
     #tours article{
         flex-wrap: wrap;
@@ -335,11 +361,10 @@ footer a{
     }
 
     #tours article div{
-        width: 40%;
+        width: 45%;
     }
 
-    /*Estilos de la seccion gallery*/
-        
+    /*Estilos de la seccion gallery*/  
     #discover h5{
         left: 12%;
         font-size: 42px;
@@ -383,26 +408,31 @@ footer a{
     #cont-list:hover #list{
         display: block;
         text-align: center;
-        background-color: #1717175b;
+        background-color: #171717d7;
         backdrop-filter: blur(10px);
     }
 
+    #list li{
+        padding: 20px 0;
+    }
+
     #list li a{
+        display: block;
         font-size: 26px;
     }
 
     /*Seccion home*/
     #home h1{
-        top: 6%;
+        top: 10%;
         left: 6%;
-        font-size: 60px;
+        font-size: 5em;
         letter-spacing: 2px;
     }
     
     #description{
-        top: 30%;
+        top: 25%;
         left: 6%;
-        font-size: 25px;
+        font-size: 2.2em;
         width: 96%;
     }
 
@@ -445,32 +475,106 @@ footer a{
     #discover h5{
         left: 7%;
         top: 4%;
-        font-size: 45px;
+        font-size: 3.5em;
     }
 
     #galery{
         left: 7%;
-        top: 26%;
+        top: 20%;
         flex-wrap: wrap;
         gap: 8px;
     }
 
     #galery div{
-        width: 95%;
+        width: 90%;
+    }
+
+    #galery div p{
+        font-size: 2em;
     }
 
     #galery div button{
-        width: 60%;
+        width: 100%;
+        font-size: 1.9em;
     }
 
     #galery div button i{
-        font-size: 16px;
+        font-size: 1.5em;
+        margin-left: 15px;
     }
 
     #galery img{
-        width: 80%;
+        width: 90%;
+        height: 20vh;
     }
+
+    
+   
 
 }
 
+@media screen and (max-width: 376px){
+    /*Seccion home*/
+    #home h1{
+        font-size: 4.2em;
+        top: 12%;
+    }
 
+    #description{
+        width: 90%;
+        font-size: 2em;
+    }
+
+    /*seccion discover*/
+    #discover h5{
+        font-size: 3em;
+    }
+    
+}
+
+@media screen and (max-width: 321px){
+    /*Seccion home*/
+    #home h1{
+        font-size: 4em;
+    }
+
+    #description{
+        font-size: 1.8em;
+    }   
+
+    .iconHome{
+        font-size: 2.5em;
+    }
+
+    #home article div p{
+        font-size: 1.3em;
+        margin-left: 2px;
+    }
+
+    .details span{
+        font-size: 1.2em;
+    }
+
+    .details i{
+        font-size: 1.4em;
+    }
+
+    /*Estils de la seccion tours*/
+    #tours h5{
+        padding: 15px 0;
+        font-size: 3em;
+    }
+
+    #tours span{
+        font-size: 1.8em;
+    }
+
+    /*Estilos de la seccion galeria*/
+    #contact ul{
+        width: 100%;
+        gap: 55px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        padding: 22px 0; 
+    }
+}
